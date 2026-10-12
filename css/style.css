@@ -24,6 +24,7 @@ button{font:inherit;background:none;border:0;color:inherit;cursor:pointer}
 
 /* 메인 */
 body.main .stage{height:1036px}
+.art{position:absolute;left:0;top:0;width:1440px;height:1036px;transform-origin:50% 0}
 .bg{position:absolute;left:0;top:0;width:1440px;height:1036px;display:block}
 /* 좌우 가장자리를 흰색으로 부드럽게 흐려 잘린 느낌 제거 */
 body.main .bg:not(.strings){-webkit-mask-image:linear-gradient(to right,transparent 0,#000 120px,#000 1320px,transparent 100%);mask-image:linear-gradient(to right,transparent 0,#000 120px,#000 1320px,transparent 100%)}
