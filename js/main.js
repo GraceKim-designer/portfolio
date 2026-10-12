@@ -6,6 +6,10 @@
   function fit() {
     var w = document.documentElement.clientWidth;
     var z = Math.min(1, w / 1440);
+    // 메인 화면은 높이도 맞춰 스크롤 없이 한 화면에 보이도록 축소
+    if (document.body.classList.contains('main')) {
+      z = Math.min(z, window.innerHeight / 1036);
+    }
     document.body.style.zoom = z < 1 ? z : '';
   }
   window.addEventListener('resize', fit);
