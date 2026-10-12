@@ -7,10 +7,14 @@
     var w = document.documentElement.clientWidth;
     var z = Math.min(1, w / 1440);
     // 메인 화면은 높이도 맞춰 스크롤 없이 한 화면에 보이도록 축소
-    if (document.body.classList.contains('main')) {
-      z = Math.min(z, window.innerHeight / 1036);
-    }
     document.body.style.zoom = z < 1 ? z : '';
+    // 메인: 헤더는 서브페이지와 같은 크기로 두고, 일러스트 영역만 높이에 맞춰 축소
+    var art = document.getElementById('art');
+    if (art) {
+      var s = Math.min(1, (window.innerHeight / z) / 1036);
+      art.style.transform = 'scale(' + s + ')';
+      stage.style.height = (1036 * s) + 'px';
+    }
   }
   window.addEventListener('resize', fit);
   fit();
