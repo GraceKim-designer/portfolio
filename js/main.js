@@ -11,9 +11,9 @@
     // 메인: 헤더는 서브페이지와 같은 크기로 두고, 일러스트 영역만 높이에 맞춰 축소
     var art = document.getElementById('art');
     if (art) {
-      var s = Math.min(1, (window.innerHeight / z) / 1036);
+      var s = Math.min(1, ((window.innerHeight / z) - 66) / 970);
       art.style.transform = 'scale(' + s + ')';
-      stage.style.height = (1036 * s) + 'px';
+      stage.style.height = (66 + 970 * s) + 'px';
     }
   }
   window.addEventListener('resize', fit);
