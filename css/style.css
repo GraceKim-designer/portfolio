@@ -1,5 +1,7 @@
 *{box-sizing:border-box;margin:0;padding:0}
 html,body{background:#fff}
+/* 스크롤바 유무와 상관없이 메인/서브 가로 중앙 위치를 동일하게 유지 */
+html{scrollbar-gutter:stable}
 body{font-family:'Noto Sans KR','Inter',sans-serif;color:#121214;-webkit-font-smoothing:antialiased}
 .viewport{width:100%;overflow-x:clip}
 .stage{position:relative;width:1440px;margin:0 auto;background:#fff}
@@ -24,7 +26,7 @@ button{font:inherit;background:none;border:0;color:inherit;cursor:pointer}
 
 /* 메인 */
 body.main .stage{height:1036px;width:2160px;margin-left:calc(50% - 1080px)}
-.art{position:absolute;left:0;top:0;width:2160px;height:1036px;transform-origin:50% 0}
+.art{position:absolute;left:0;top:0;width:2160px;height:1036px;transform-origin:50% 66px;clip-path:inset(66px 0 0 0)}
 .bgw{position:absolute;left:0;top:0;width:2160px;height:1036px;display:block}
 .core{position:absolute;left:360px;top:0;width:1440px;height:1036px}
 .bg{position:absolute;left:0;top:0;width:1440px;height:1036px;display:block}
