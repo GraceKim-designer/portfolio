@@ -25,6 +25,9 @@ button{font:inherit;background:none;border:0;color:inherit;cursor:pointer}
 /* 메인 */
 body.main .stage{height:1036px}
 .bg{position:absolute;left:0;top:0;width:1440px;height:1036px;display:block}
+/* 좌우 가장자리를 흰색으로 부드럽게 흐려 잘린 느낌 제거 */
+body.main .bg:not(.strings){-webkit-mask-image:linear-gradient(to right,transparent 0,#000 120px,#000 1320px,transparent 100%);mask-image:linear-gradient(to right,transparent 0,#000 120px,#000 1320px,transparent 100%)}
+body.main .strings{-webkit-mask-image:linear-gradient(to right,transparent 0,#000 120px,#000 1320px,transparent 100%);mask-image:linear-gradient(to right,transparent 0,#000 120px,#000 1320px,transparent 100%)}
 .hot{position:absolute;cursor:default}
 .vid{position:absolute;overflow:hidden;pointer-events:none}
 .vid video{width:100%;height:100%;object-fit:cover;display:block}
