@@ -55,6 +55,7 @@ body.main .strings{-webkit-mask-image:linear-gradient(to right,transparent 0,#00
 .grid{position:absolute;pointer-events:none}
 .cno{position:absolute;font:700 11px/14px 'DM Sans',sans-serif}
 .year{position:absolute;font:700 48px/58px 'Noto Sans KR',sans-serif;color:#fff;white-space:nowrap}
+.linktext a:hover{text-decoration:underline}
 .linktext{position:absolute;font:700 16px/19px 'Noto Sans KR',sans-serif;color:#121214;white-space:nowrap}
 .tline{position:absolute;left:350px;top:136px;width:0;height:754px;border-left:1.5px solid #bfbfbf}
 .cyear{position:absolute;left:300px;width:60px;font:700 18px/24px 'DM Sans',sans-serif;color:#1a1a1a}
