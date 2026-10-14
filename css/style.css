@@ -99,7 +99,8 @@ body.main .stage{height:1036px;width:2160px;margin-left:calc(50% - 1080px)}
   body.mlock{overflow:hidden}
 
   /* 메인: 오브젝트 조합만 표시 (PC 메인을 잘라서 축소) */
-  .mmain{min-height:calc(100vh - 57px);display:flex;flex-direction:column;justify-content:center;align-items:center;padding:0 0 24px}
+  .mmain{position:relative;min-height:calc(100vh - 57px);display:flex;flex-direction:column;justify-content:center;align-items:center;padding:0 0 24px}
+  .mrope{position:absolute;top:0;width:1px;background:#121214;pointer-events:none}
   .mhero{position:relative;width:100%;max-width:520px;margin:0 auto;aspect-ratio:816/833;overflow:hidden}
   .mcanvas{position:absolute;left:0;top:0;width:1440px;height:1036px;transform-origin:0 0}
   .mcanvas .strings{filter:drop-shadow(1px 0 0 #000) drop-shadow(0 1px 0 #000)}
