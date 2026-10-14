@@ -24,6 +24,9 @@
     if (!hero || !cv) return;
     var sc = hero.clientWidth / 816;
     cv.style.transform = 'scale(' + sc + ') translate(-302px, -65px)';
+    // 중앙 줄을 상단 바의 선까지 이어 그림 (원본 줄 위치: x 709.2)
+    var r = document.getElementById('mrope');
+    if (r) { r.style.left = (hero.offsetLeft + (709.2 - 302) * sc - 0.5) + 'px'; r.style.height = (hero.offsetTop + 2) + 'px'; }
   }
   // 모바일 메인: 오브젝트를 누르면 제목과 하위 메뉴가 바뀜 (PC의 마우스 오버와 같은 역할)
   (function () {
